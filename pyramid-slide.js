@@ -9,8 +9,6 @@ $("#draw-form").submit(function(event) {
     // clear any previous error message that might be displayed from last time
     clearError();
 
-    // TODO 4
-    // figure out the height the user typed (replace the "5" below)
     heightStr = $('#height').val();
 
     // if they didn't type anything, yell at them and exit early
