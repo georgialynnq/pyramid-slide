@@ -34,11 +34,9 @@
     <form id="draw-form">
         <label>
             How high?
-            <input type="text" id="height"/>
-            <label class="error-message"></label>
+            <input type="range" id="slide" value="10" min="0" max"15" oninput="drawPyramid(this.value)"/>
         </label>
         <br><br>
-        <input type="submit" value="Draw a pyramid"/>
     </form>
 
     <br><br>
