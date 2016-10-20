@@ -9,6 +9,7 @@ $("#draw-form").submit(function(event) {
     // clear any previous error message that might be displayed from last time
     clearError();
 
+    // figure out the height the user typed (replace the "5" below)
     heightStr = $('#height').val();
 
     // if they didn't type anything, yell at them and exit early
@@ -47,7 +48,6 @@ function displayError(message) {
     var msg = $('form#draw-form lable.error-message');
     msg.text(message);
     var input = $('#height').addClass('invalid-field');
-    // TODO 3
     // implement this function using jQuery
 
 }
@@ -71,7 +71,6 @@ function clearError(message) {
  * Renders, in the HTML document, a Mario pyramid of the specified height
  */
 function drawPyramid(height) {
-    // TODO 2
     // clear the old content from the #pyramid container
     $('#pyramid').empty();
 
@@ -95,7 +94,6 @@ function drawPyramid(height) {
         // make a <p> element for this row
         rowElem = $("<p>").html(rowStr);
 
-        // TODO 1
         // insert the paragraph into the #pyramid container
         $('#pyramid').append(rowElem);
     }
