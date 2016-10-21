@@ -32,10 +32,13 @@
     <br>
 
     <form id="draw-form">
-        <label>
-            How high?
-            <input type="range" id="slide" value="10" min="0" max"15" oninput="drawPyramid(this.value)"/>
-        </label>
+        <div>
+            <label for="slider">
+                How high?
+            </label>
+            <input type="range" id="slide" value="10" min="0" max="15" oninput="pyramidSlide()"/>
+            <span id="slide-number"></span>
+        </div>
         <br><br>
     </form>
 
